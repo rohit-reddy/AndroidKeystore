@@ -116,6 +116,6 @@ class MainActivity : AppCompatActivity() {
     companion object {
         private val TAG = MainActivity::class.java.simpleName
         private const val SAMPLE_ALIAS = "MYALIAS"
-        private const val SECRET = "587c67045c585d3d6decbf8134684a7a"
+        private const val SECRET = "3d6decbf8145c585d34684a7a587c670"
     }
 }

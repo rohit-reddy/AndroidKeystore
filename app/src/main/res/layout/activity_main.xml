@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/DecryptedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:text="Decrypted Text"
+        app:layout_constraintStart_toStartOf="@+id/tvEncryptedText"
+        app:layout_constraintTop_toBottomOf="@+id/tvEncryptedText" />
+
+    <TextView
+        android:id="@+id/tvDecryptedText"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/tvEncryptedText"
+        app:layout_constraintStart_toStartOf="@+id/tvEncryptedText"
+        app:layout_constraintTop_toBottomOf="@+id/DecryptedText" />
+
+
+    <TextView
+        android:id="@+id/EncryptedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Encrypted Text"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/edTextToEncrypt"
+        app:layout_constraintTop_toBottomOf="@+id/edTextToEncrypt" />
+
+    <TextView
+        android:id="@+id/tvEncryptedText"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/edTextToEncrypt"
+        app:layout_constraintStart_toStartOf="@+id/edTextToEncrypt"
+        app:layout_constraintTop_toBottomOf="@+id/EncryptedText" />
+
+    <EditText
+        android:id="@+id/edTextToEncrypt"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="224dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:text=""
+        android:backgroundTint="@color/black"
+        android:inputType="textPersonName"
+        android:hint="Enter text to Encypt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_encrypt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Encrypt"
+        android:onClick="onClick"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_decrypt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Decrypt"
+        android:onClick="onClick"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
